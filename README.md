@@ -53,13 +53,10 @@ python main.py
 
 *Note: For field names with spaces (e.g., "Aerospace Engineering"), please enclose them in double quotes.* 
 
--   `/admin_add_q <field> <question_text> [max_words=200]`: Adds a new question for a specified field. `max_words` is optional.
-    *Example: `/admin_add_q IELTS "How do you prepare for the speaking test?"`*
-    *Example with multi-word field: `/admin_add_q "Machine Learning" "What is your understanding of supervised learning?" 180`*
--   `/admin_edit_q <field> <index> <new_question_text> [new_max_words]`: Edits an existing question. `index` is 1-based.
-    *Example: `/admin_edit_q Mathematics 2 "What is your favorite theorem?" 150`*
--   `/admin_del_q <field> <index>`: Deletes a question. `index` is 1-based.
-    *Example: `/admin_del_q Economics 1`*
+-   `/admin_add_q `: 
+    *Adds a new question for a specified field.*
+-   `/admin_del_q <field> <index>`: Deletes a question. index is 1-based.
+    *Example: /admin_del_q Economics 1*
 -   `/admin_list_q <field>`: Lists all questions for a given field.
 
 ## Project Structure
