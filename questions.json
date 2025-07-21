@@ -1,0 +1,131 @@
+{
+    "IELTS": [
+        {
+            "q": {
+                "en": "How do you prepare for the speaking test?",
+                "uz": "Siz speaking imtihoniga qanday tayyorgarlik ko'rasiz?"
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "What is the most challenging part of the IELTS exam for you?",
+                "uz": "Siz uchun IELTS imtihonining eng qiyin qismi nima?"
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "Describe a time you used English to solve a problem.",
+                "uz": "Muammoni hal qilish uchun Ingliz tilidan qanday foydalanganingizni tasvirlang."
+            },
+            "max_words": 200
+        }
+    ],
+    "Mathematics": [
+        {
+            "q": {
+                "en": "Which area of mathematics interests you the most and why?",
+                "uz": "Qaysi matematika sohasi sizni eng ko'p qiziqtiradi va nega?"
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "Describe a challenging math problem you've solved and how you approached it.",
+                "uz": "Siz hal qilgan qiyin matematik muammoni va unga qanday yondashganingizni tasvirlang."
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "How do you see mathematics being applied in real-world scenarios?",
+                "uz": "Matematikaning haqiqiy hayotda qo'llanilishiga qanday qaraysiz?"
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "What is your favorite mathematical theorem or concept?",
+                "uz": "Sizning sevimli matematik teorema yoki mavzularingiz haqida aytib bering."
+            },
+            "max_words": 150
+        }
+    ],
+    "Economics": [
+        {
+            "q": {
+                "en": "What current economic issue do you find most pressing?",
+                "uz": "Sizni eng ko'p qiziqtiradigan joriy iqtisodiy muammo nima?"
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "How do supply and demand affect market prices?",
+                "uz": "Taklif va talab bozor narxlariga qanday ta'sir qiladi?"
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "Discuss the role of government in a market economy.",
+                "uz": "Bozor iqtisodiyotida hukumatning roli haqida muhokama qiling."
+            },
+            "max_words": 200
+        }
+    ],
+    "Aerospace Engineering": [
+        {
+            "q": {
+                "en": "What aspect of aerospace engineering fascinates you the most?",
+                "uz": "Aerokosmik muhandisligining qaysi jihati sizni eng ko'p qiziqtiradi?"
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "Describe a significant innovation in aerospace technology.",
+                "uz": "Aerokosmik texnologiyadagi muhim innovatsiyani tasvirlang."
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "What challenges do aerospace engineers face today?",
+                "uz": "Aerokosmik muhandislar bugungi kunda qanday qiyinchiliklarga duch kelmoqdalar?"
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "If you could design any aircraft or spacecraft, what would it be?",
+                "uz": "Agar siz har qanday samolyot yoki kosmik kemani loyihalashtirish qobiliyatiga ega bo'lsangiz, u nima bo'lardi?"
+            },
+            "max_words": 200
+        }
+    ],
+    "Machine Learning": [
+        {
+            "q": {
+                "en": "What is your understanding of supervised learning vs. unsupervised learning?",
+                "uz": "Supervised va unsupervised learning haqida qanday tushunchangiz bor?"
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "Describe a real-world application of machine learning you find interesting.",
+                "uz": "Machine learningdagi sizni qiziqtiradigan hayotiy tadbiqlarini tasvirlang."
+            },
+            "max_words": 200
+        },
+        {
+            "q": {
+                "en": "What are some ethical considerations in AI and machine learning?",
+                "uz": "AI va machine learning sohasida qanday etik jihatlarga e'tibor berish lozim?"
+            },
+            "max_words": 200
+        }
+    ]
+}
