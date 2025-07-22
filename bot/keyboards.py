@@ -14,13 +14,11 @@ def gender_kb(lang: str):
         buttons = [
             [InlineKeyboardButton(text="Erkak", callback_data="gender_male")],
             [InlineKeyboardButton(text="Ayol", callback_data="gender_female")],
-            [InlineKeyboardButton(text="Boshqa", callback_data="gender_other")]
         ]
     else:
         buttons = [
             [InlineKeyboardButton(text="Male", callback_data="gender_male")],
             [InlineKeyboardButton(text="Female", callback_data="gender_female")],
-            [InlineKeyboardButton(text="Other", callback_data="gender_other")]
         ]
     return InlineKeyboardMarkup(inline_keyboard=buttons)
 
@@ -31,7 +29,7 @@ def fields_kb(lang: str):
             [InlineKeyboardButton(text="IELTS", callback_data="field_IELTS")],
             [InlineKeyboardButton(text="Matematika", callback_data="field_Mathematics")],
             [InlineKeyboardButton(text="Iqtisodiyot", callback_data="field_Economics")],
-            [InlineKeyboardButton(text="Aerokosmik Muhandislik", callback_data="field_Engineering")],
+            [InlineKeyboardButton(text="Muhandislik", callback_data="field_Engineering")],
             [InlineKeyboardButton(text="Sun'iy Zako", callback_data="field_Machine Learning")]
         ]
     else:

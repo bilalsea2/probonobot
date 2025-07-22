@@ -43,7 +43,7 @@ async def process_age(message: Message, state: FSMContext):
     except ValueError:
         await message.answer(get_text(lang, 'invalid_age'))
 
-@router.callback_query(RegistrationStates.waiting_for_gender, F.data.in_({'gender_male', 'gender_female', 'gender_other'}))
+@router.callback_query(RegistrationStates.waiting_for_gender, F.data.in_({'gender_male', 'gender_female'}))
 async def process_gender(callback: CallbackQuery, state: FSMContext):
     user_data = await state.get_data()
     lang = user_data.get('lang', 'en')
@@ -51,7 +51,6 @@ async def process_gender(callback: CallbackQuery, state: FSMContext):
     gender_map = {
         'gender_male': get_text(lang, 'gender_male_label'),
         'gender_female': get_text(lang, 'gender_female_label'),
-        'gender_other': get_text(lang, 'gender_other_label'),
     }
     gender = gender_map.get(callback.data)
     await state.update_data(gender=gender)
