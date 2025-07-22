@@ -51,7 +51,7 @@ python main.py
 
 ### Admin Commands (for configured ADMIN_IDS only)
 
-*Note: For field names with spaces (e.g., "Aerospace Engineering"), please enclose them in double quotes.* 
+*Note: For field names with spaces (e.g., "Engineering"), please enclose them in double quotes.* 
 
 -   `/admin_add_q `: 
     *Adds a new question for a specified field.*

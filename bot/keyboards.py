@@ -31,7 +31,7 @@ def fields_kb(lang: str):
             [InlineKeyboardButton(text="IELTS", callback_data="field_IELTS")],
             [InlineKeyboardButton(text="Matematika", callback_data="field_Mathematics")],
             [InlineKeyboardButton(text="Iqtisodiyot", callback_data="field_Economics")],
-            [InlineKeyboardButton(text="Aerokosmik Muhandislik", callback_data="field_Aerospace Engineering")],
+            [InlineKeyboardButton(text="Aerokosmik Muhandislik", callback_data="field_Engineering")],
             [InlineKeyboardButton(text="Sun'iy Zako", callback_data="field_Machine Learning")]
         ]
     else:
@@ -39,7 +39,7 @@ def fields_kb(lang: str):
             [InlineKeyboardButton(text="IELTS", callback_data="field_IELTS")],
             [InlineKeyboardButton(text="Mathematics", callback_data="field_Mathematics")],
             [InlineKeyboardButton(text="Economics", callback_data="field_Economics")],
-            [InlineKeyboardButton(text="Aerospace Engineering", callback_data="field_Aerospace Engineering")],
+            [InlineKeyboardButton(text="Engineering", callback_data="field_Engineering")],
             [InlineKeyboardButton(text="Machine Learning", callback_data="field_Machine Learning")]
         ]
     return InlineKeyboardMarkup(inline_keyboard=buttons)
