@@ -1,23 +1,27 @@
-from email.mime import message
 import logging
+from datetime import datetime
 
 from aiogram import Router, F
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
-from datetime import datetime
 
 from bot.states.registration import RegistrationStates
 from bot.keyboards import gender_kb, fields_kb
 from bot.localization import get_text
-from bot.utils import load_questions, append_to_csv, send_telegram_notification, append_to_google_sheets
+from bot.utils import (
+    load_questions,
+    append_to_csv,
+    send_telegram_notification,
+    append_to_google_sheets,
+)
 
 router = Router()
 logger = logging.getLogger(__name__)
 
+
 @router.message(RegistrationStates.waiting_for_name)
 async def process_name(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    lang = user_data.get('lang', 'en')
+    lang = (await state.get_data()).get('lang', 'en')
 
     name = message.text.strip()
     if not name:
@@ -28,10 +32,10 @@ async def process_name(message: Message, state: FSMContext):
     await message.answer(get_text(lang, 'prompt_age'))
     await state.set_state(RegistrationStates.waiting_for_age)
 
+
 @router.message(RegistrationStates.waiting_for_age)
 async def process_age(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    lang = user_data.get('lang', 'en')
+    lang = (await state.get_data()).get('lang', 'en')
 
     try:
         age = int(message.text.strip())
@@ -43,10 +47,10 @@ async def process_age(message: Message, state: FSMContext):
     except ValueError:
         await message.answer(get_text(lang, 'invalid_age'))
 
+
 @router.callback_query(RegistrationStates.waiting_for_gender, F.data.in_({'gender_male', 'gender_female'}))
 async def process_gender(callback: CallbackQuery, state: FSMContext):
-    user_data = await state.get_data()
-    lang = user_data.get('lang', 'en')
+    lang = (await state.get_data()).get('lang', 'en')
 
     gender_map = {
         'gender_male': get_text(lang, 'gender_male_label'),
@@ -56,60 +60,83 @@ async def process_gender(callback: CallbackQuery, state: FSMContext):
     await state.update_data(gender=gender)
     await callback.message.edit_text(get_text(lang, 'gender_selected').format(gender=gender))
 
-    await callback.message.answer(get_text(lang, 'prompt_field'), reply_markup=fields_kb(lang))
-    await state.set_state(RegistrationStates.waiting_for_field)
+    # Ask for awards now
+    await callback.message.answer(get_text(lang, 'prompt_awards'))
+    await state.set_state(RegistrationStates.waiting_for_awards)
     await callback.answer()
+
 
 @router.message(RegistrationStates.waiting_for_gender)
 async def process_gender_invalid_message(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    lang = user_data.get('lang', 'en')
+    lang = (await state.get_data()).get('lang', 'en')
     await message.answer(get_text(lang, 'invalid_gender_input'), reply_markup=gender_kb(lang))
+
+
+# NEW handler
+@router.message(RegistrationStates.waiting_for_awards)
+async def process_awards(message: Message, state: FSMContext):
+    lang = (await state.get_data()).get('lang', 'en')
+    text = message.text.strip()
+
+    if not text:
+        await message.answer(get_text(lang, 'invalid_awards_empty'))
+        return
+
+    await state.update_data(awards=text)
+
+    await message.answer(get_text(lang, 'prompt_field'), reply_markup=fields_kb(lang))
+    await state.set_state(RegistrationStates.waiting_for_field)
+
 
 @router.callback_query(RegistrationStates.waiting_for_field, F.data.startswith('field_'))
 async def process_field(callback: CallbackQuery, state: FSMContext):
-    user_data = await state.get_data()
-    lang = user_data.get('lang', 'en')
+    lang = (await state.get_data()).get('lang', 'en')
 
-    field = callback.data.split('_')[1]
-    await state.update_data(selected_field=field, current_question_index=0, answers={})
-    await callback.message.edit_text(get_text(lang, 'field_selected').format(field=field))
+    field_key = callback.data  # e.g. 'field_ml'
+    await state.update_data(selected_field=field_key, current_question_index=0, answers={})
+
+    # Show something readable
+    pretty_name = field_key.replace('field_', '').replace('_', ' ').title()
+    await callback.message.edit_text(get_text(lang, 'field_selected').format(field=pretty_name))
 
     await ask_next_question(callback.message, state, lang)
     await callback.answer()
 
+
 @router.message(RegistrationStates.waiting_for_field)
 async def process_field_invalid_message(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    lang = user_data.get('lang', 'en')
+    lang = (await state.get_data()).get('lang', 'en')
     await message.answer(get_text(lang, 'invalid_field_input'), reply_markup=fields_kb(lang))
 
 
 async def ask_next_question(message: Message, state: FSMContext, lang: str):
     user_data = await state.get_data()
-    field = user_data['selected_field']
+    field_key = user_data['selected_field']
     current_index = user_data['current_question_index']
-    questions = load_questions().get(field, [])
+    questions = load_questions().get(field_key, [])
 
     if current_index < len(questions):
         question_data = questions[current_index]
         question_text = question_data['q'].get(lang, question_data['q'].get('en'))
-        await message.answer(get_text(lang, 'question_prompt').format(question_num=current_index + 1, question=question_text))
+        await message.answer(get_text(lang, 'question_prompt').format(
+            question_num=current_index + 1,
+            question=question_text
+        ))
         await state.set_state(RegistrationStates.answering_questions)
     else:
         await complete_registration(message, state, lang)
+
 
 @router.message(RegistrationStates.answering_questions)
 async def process_answer(message: Message, state: FSMContext):
     user_data = await state.get_data()
     lang = user_data.get('lang', 'en')
-    field = user_data['selected_field']
+    field_key = user_data['selected_field']
     current_index = user_data['current_question_index']
     answers = user_data.get('answers', {})
 
-    questions = load_questions().get(field, [])
+    questions = load_questions().get(field_key, [])
     if current_index >= len(questions):
-        # This should ideally not happen if flow is correct
         await complete_registration(message, state, lang)
         return
 
@@ -129,7 +156,6 @@ async def process_answer(message: Message, state: FSMContext):
     answers[f'q{current_index + 1}'] = {'question': question_text, 'answer': answer_text}
 
     await state.update_data(answers=answers, current_question_index=current_index + 1)
-
     await ask_next_question(message, state, lang)
 
 
@@ -138,10 +164,11 @@ async def complete_registration(message: Message, state: FSMContext, lang: str):
     full_data = {
         'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
         'user_id': message.from_user.id,
-        'telegram_username': message.from_user.username or 'N/A',
+        'telegram_username': f"@{message.from_user.username}" if message.from_user.username else 'N/A',
         'name': user_data.get('name'),
         'age': user_data.get('age'),
         'gender': user_data.get('gender'),
+        'awards': user_data.get('awards'),  # new
         'selected_field': user_data.get('selected_field'),
         'language_used': user_data.get('lang'),
         'answers': user_data.get('answers', {})

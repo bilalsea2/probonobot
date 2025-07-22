@@ -8,7 +8,7 @@ from aiogram.exceptions import TelegramBadRequest
 import gspread
 from google.oauth2.service_account import Credentials
 
-from config import CHANNEL_ID, QUESTIONS_FILE, CSV_FILE
+from config import CHANNEL_ID, LOG_CHANNEL_ID, QUESTIONS_FILE, CSV_FILE
 
 logger = logging.getLogger(__name__)
 
@@ -42,11 +42,6 @@ def load_questions() -> dict:
         logger.error(f"Error decoding {QUESTIONS_FILE}. It might be corrupted.")
         return {}
 
-def save_questions(questions: dict):
-    with open(QUESTIONS_FILE, 'w', encoding='utf-8') as f:
-        json.dump(questions, f, indent=4, ensure_ascii=False)
-        logger.error(f"Error decoding {QUESTIONS_FILE}. It might be corrupted.")
-        return {}
 
 def save_questions(questions: dict):
     with open(QUESTIONS_FILE, 'w', encoding='utf-8') as f:
@@ -203,7 +198,7 @@ async def send_telegram_notification(bot: Bot, data: dict):
             answer = escape_markdown_v2(ans_data['answer'])
             answers_text.append(f"{i}. {question}: {answer}")
 
-    answers_formatted = "\n".join(answers_text) if answers_text else "No answers provided."
+    answers_formatted = "\n\n".join(answers_text) if answers_text else "No answers provided."
 
     # Escape all parts of the message that are not intended as Markdown formatting
     user_name = escape_markdown_v2(data.get('name') or 'N/A')
@@ -218,9 +213,9 @@ async def send_telegram_notification(bot: Bot, data: dict):
     message_text = f"""
     📝 New Registration {language_used}:
 
-    👤 User: {user_name} {user_age}\\, {user_gender}
+    👤 User: {user_name} {user_age}, {user_gender}
     💡 Field: {selected_field}
-    🔗 User ID: `{user_id}` @{telegram_username}
+    🔗 User ID: {telegram_username}
 
     --- Answers ---
     {answers_formatted}
@@ -229,7 +224,7 @@ async def send_telegram_notification(bot: Bot, data: dict):
     """
 
     try:
-        await bot.send_message(chat_id=CHANNEL_ID, text=message_text, parse_mode='HTML')
+        await bot.send_message(chat_id=LOG_CHANNEL_ID, text=message_text, parse_mode='HTML')
     except Exception as e:
         logger.error(f"Error sending Telegram notification: {e}")
         raise # Re-raise to be handled by caller
