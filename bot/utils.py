@@ -101,6 +101,7 @@ async def append_to_google_sheets(record : dict):
         'name': record.get('name'),
         'age': record.get('age'),
         'gender': record.get('gender', ''),
+        'awards': record.get('awards', ''),
         'selected_field': record.get('field'),
         'language_used': record.get('language'),
     }
@@ -204,6 +205,7 @@ async def send_telegram_notification(bot: Bot, data: dict):
     user_name = escape_markdown_v2(data.get('name'))
     user_age = escape_markdown_v2(str(data.get('age') or 'N/A')) # Age is int, convert to str
     user_gender = escape_markdown_v2(data.get('gender') or 'N/A')
+    user_awards = data.get('awards')
     selected_field = escape_markdown_v2(data.get('selected_field') or 'N/A')
     user_id = str(data.get('user_id') or 'N/A') # User ID is int
     telegram_username = data.get('telegram_username')
@@ -214,6 +216,7 @@ async def send_telegram_notification(bot: Bot, data: dict):
     📝 New Registration {language_used}:
 
     👤 User: {user_name} {user_age}, {user_gender}
+    Awards: {user_awards}
     💡 Field: {selected_field}
     🔗 User ID: {telegram_username}
 
