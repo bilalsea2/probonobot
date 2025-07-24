@@ -206,13 +206,13 @@ async def send_telegram_notification(bot: Bot, data: dict):
     answers_formatted = "\n".join(answers_text) if answers_text else "No answers provided."
 
     # Escape all parts of the message that are not intended as Markdown formatting
-    user_name = escape_markdown_v2(data.get('name') or 'N/A')
+    user_name = escape_markdown_v2(data.get('name'))
     user_age = escape_markdown_v2(str(data.get('age') or 'N/A')) # Age is int, convert to str
     user_gender = escape_markdown_v2(data.get('gender') or 'N/A')
     selected_field = escape_markdown_v2(data.get('selected_field') or 'N/A')
-    user_id = escape_markdown_v2(str(data.get('user_id') or 'N/A')) # User ID is int
-    telegram_username = escape_markdown_v2(data.get('telegram_username') or 'N/A')
-    timestamp = escape_markdown_v2(data.get('timestamp') or 'N/A')
+    user_id = str(data.get('user_id') or 'N/A') # User ID is int
+    telegram_username = data.get('telegram_username')
+    timestamp = str(data.get('timestamp'))
     language_used = escape_markdown_v2(data.get('language_used') or 'N/A')
 
     message_text = f"""
