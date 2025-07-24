@@ -25,7 +25,7 @@ MESSAGES = {
         'registration_complete': "Registration complete! Thank you.",
         'csv_save_error': "An error occurred while saving your data. Please try again later.",
         'telegram_notification_error': "An error occurred while sending notification. Please contact support.",
-        'prompt_awards': "What are your awards? (IELTS, SAT, Olympiads, etc.). Please include scores/years. (50–80 words):",
+        'prompt_awards': "What are your awards? (IELTS, SAT, Olympiads, etc.). Please include scores/years.",
         'invalid_awards_empty': "Awards cannot be empty. Please list them."
     },
     'uz': {
@@ -54,7 +54,7 @@ MESSAGES = {
         'registration_complete': "Ro'yxatdan o'tish yakunlandi! Rahmat.",
         'csv_save_error': "Ma'lumotlaringizni saqlashda xatolik yuz berdi. Iltimos, keyinroq qayta urinib ko'ring.",
         'telegram_notification_error': "Xabar yuborishda xatolik yuz berdi. Iltimos, yordam uchun murojaat qiling.", 
-        'prompt_awards': "Mukofotlaringiz qanday? (IELTS, SAT, olimpiadalar va boshqalar). Ballar/yillarni kiriting. (50–80 so‘z):",
+        'prompt_awards': "Mukofotlaringiz qanday? (IELTS, SAT, olimpiadalar va boshqalar). Ballar/yillarni kiriting.",
         'invalid_awards_empty': "Mukofotlar bo'sh bo'lmasligi kerak. Iltimos, ularni yozing.",
     },
     'ru': {
@@ -83,7 +83,7 @@ MESSAGES = {
         'registration_complete': "Регистрация завершена! Спасибо.",
         'csv_save_error': "Произошла ошибка при сохранении ваших данных. Повторите попытку позже.",
         'telegram_notification_error': "Произошла ошибка при отправке уведомления. Свяжитесь со службой поддержки.", 
-        'prompt_awards': "Какие у вас награды? (IELTS, SAT, олимпиады и т.д.). Укажите баллы/годы. (50–80 слов):",
+        'prompt_awards': "Какие у вас награды? (IELTS, SAT, олимпиады и т.д.). Укажите баллы/годы.",
         'invalid_awards_empty': "Поле с наградами не может быть пустым. Пожалуйста, перечислите их.",
         'awards_too_long': "Слишком длинно. Уложитесь в {max_words} слов.",
     }

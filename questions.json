@@ -2,179 +2,179 @@
   "field_ielts": [
     {
       "q": {
-        "en": "If you were accepted into a one-month intensive IELTS program, how would you effectively use at least 2 hours a day for English study?",
-        "uz": "Agar siz bir oylik intensiv IELTS dasturiga qabul qilinsangiz, kuningizdan kamida 2 soatni ingliz tili mashg‘ulotlariga qanday qilib samarali foydalanar edingiz?",
-        "ru": "Если бы вас приняли на месячную интенсивную программу IELTS, как бы вы эффективно использовали не менее 2 часов в день для изучения английского?"
+        "en": "If you were accepted into a one-month intensive IELTS program, how would you effectively use at least 2 hours a day for English study? (30-50 words)",
+        "uz": "Agar siz bir oylik intensiv IELTS dasturiga qabul qilinsangiz, kuningizdan kamida 2 soatni ingliz tili mashg‘ulotlariga qanday qilib samarali foydalanar edingiz? (30-50 so‘z)",
+        "ru": "Если бы вас приняли на месячную интенсивную программу IELTS, как бы вы эффективно использовали не менее 2 часов в день для изучения английского? (30–50 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "Describe a time when you faced a significant challenge in preparing for the IELTS exam. How did you overcome it?",
-        "uz": "Ingliz tili darajangizni ancha yaxshilagan biror vaziyatni eslang. Qanday strategiya yoki mashg‘ulot sizga yordam bergan?",
-        "ru": "Опишите случай, когда вы столкнулись с серьёзной трудностью при подготовке к IELTS. Как вы её преодолели?"
+        "en": "Describe a time when you faced a significant challenge in preparing for the IELTS exam. How did you overcome it? (30-50 words)",
+        "uz": "Ingliz tili darajangizni ancha yaxshilagan biror vaziyatni eslang. Qanday strategiya yoki mashg‘ulot sizga yordam bergan? (30-50 so‘z)",
+        "ru": "Опишите случай, когда вы столкнулись с серьёзной трудностью при подготовке к IELTS. Как вы её преодолели? (30–50 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "You want to give your brother or sister advice on how to prepare for the IELTS Speaking test. What 3 pieces of advice would you give them?",
-        "uz": "Siz ukangiz yoki singlingizga IELTS Speaking bo‘yicha maslahat bermoqchisiz. Ularga qanday 3 ta maslahat berasiz?",
-        "ru": "Вы хотите дать брату или сестре советы по подготовке к разделу Speaking в IELTS. Какие 3 совета вы бы дали?"
+        "en": "You want to give your brother or sister advice on how to prepare for the IELTS Speaking test. What 3 pieces of advice would you give them? (80-100 words)",
+        "uz": "Siz ukangiz yoki singlingizga IELTS Speaking bo‘yicha maslahat bermoqchisiz. Ularga qanday 3 ta maslahat berasiz? (80-100 so‘z)",
+        "ru": "Вы хотите дать брату или сестре советы по подготовке к разделу Speaking в IELTS. Какие 3 совета вы бы дали? (80–100 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "Why do you think learning English is important for your future career? How does it relate to your goals?",
-        "uz": "Siz uchun ingliz tilini bilish nima uchun muhim? Bu sizning kelajakdagi maqsadlaringiz bilan qanday bog‘liq?",
-        "ru": "Почему, по вашему мнению, знание английского важно для вашей будущей карьеры? Как это связано с вашими целями?"
+        "en": "Why do you think learning English is important for your future career? How does it relate to your goals? (80-100 words)",
+        "uz": "Siz uchun ingliz tilini bilish nima uchun muhim? Bu sizning kelajakdagi maqsadlaringiz bilan qanday bog‘liq? (80-100 so‘z)",
+        "ru": "Почему, по вашему мнению, знание английского важно для вашей будущей карьеры? Как это связано с вашими целями? (80–100 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     }
   ],
   "field_mathematics": [
     {
       "q": {
-        "en": "If you can't solve a math problem for an hour, what would be your next steps?",
-        "uz": "Agar siz bir soat davomida bir matematik masalani yecha olmasangiz, keyingi qadamlaringiz qanday bo‘ladi?",
-        "ru": "Если вы не можете решить задачу по математике в течение часа, какие будут ваши следующие шаги?"
+        "en": "If you can't solve a math problem for an hour, what would be your next steps? (30-50 words)",
+        "uz": "Agar siz bir soat davomida bir matematik masalani yecha olmasangiz, keyingi qadamlaringiz qanday bo‘ladi? (30-50 so‘z)",
+        "ru": "Если вы не можете решить задачу по математике в течение часа, какие будут ваши следующие шаги? (30–50 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "Think of a mathematical concept that was difficult for you at first but you later understood. What helped you?",
-        "uz": "Oldin sizga qiyin tuyulgan, ammo keyin tushungan matematik tushunchani ayting. Nima yordam berdi?",
-        "ru": "Вспомните математическую идею, которая сначала была для вас сложной, но затем стала понятной. Что вам помогло?"
+        "en": "Think of a mathematical concept that was difficult for you at first but you later understood. What helped you? (30-50 words)",
+        "uz": "Oldin sizga qiyin tuyulgan, ammo keyin tushungan matematik tushunchani ayting. Nima yordam berdi? (30-50 so‘z)",
+        "ru": "Вспомните математическую идею, которая сначала была для вас сложной, но затем стала понятной. Что вам помогло? (30–50 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "How would you explain the concept of 'infinity' or 'limit' to a 10-year-old?",
-        "uz": "“Cheksizlik” yoki “limit” tushunchasini 10 yoshli bolaga qanday tushuntirgan bo‘lardingiz?",
-        "ru": "Как бы вы объяснили 10-летнему ребёнку понятие «бесконечность» или «предел»?"
+        "en": "How would you explain the concept of 'infinity' or 'limit' to a 10-year-old? (50-80 words)",
+        "uz": "“Cheksizlik” yoki “limit” tushunchasini 10 yoshli bolaga qanday tushuntirgan bo‘lardingiz? (50-80 so‘z)",
+        "ru": "Как бы вы объяснили 10-летнему ребёнку понятие «бесконечность» или «предел»? (50–80 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "What can be divided by zero?",
-        "uz": "Nimani no‘lga bo‘lsa bo‘ladi?",
-        "ru": "Что можно делить на ноль?"
+        "en": "What can be divided by zero? (30-50 words)",
+        "uz": "Nimani no‘lga bo‘lsa bo‘ladi? (30-50 so‘z)",
+        "ru": "Что можно делить на ноль? (30–50 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "If you were accepted into this program, how many hours per week would you be willing to dedicate to problem-solving? Why?",
-        "uz": "Agar siz ushbu dasturga qabul qilinsangiz, har haftada necha soatni masala yechish uchun bag‘ishlashga tayyorsiz? Nega?",
-        "ru": "Если вас примут в программу, сколько часов в неделю вы готовы посвятить решению задач? Почему?"
+        "en": "If you were accepted into this program, how many hours per week would you be willing to dedicate to problem-solving? Why? (50-80 words)",
+        "uz": "Agar siz ushbu dasturga qabul qilinsangiz, har haftada necha soatni masala yechish uchun bag‘ishlashga tayyorsiz? Nega? (50-80 so‘z)",
+        "ru": "Если вас примут в программу, сколько часов в неделю вы готовы посвятить решению задач? Почему? (50–80 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     }
   ],
   "field_economics": [
     {
       "q": {
-        "en": "If bread is a main food in a village and grain production decreases, what happens to the price of bread?",
-        "uz": "Agar bir qishloqda non asosiy oziq-ovqat bo‘lsa va g‘alla yetishtirish kamayib ketsa, non narxiga nima bo‘ladi?",
-        "ru": "Если в деревне хлеб — основной продукт, и производство зерна снижается, что произойдёт с ценой на хлеб?"
+        "en": "If bread is a main food in a village and grain production decreases, what happens to the price of bread? (30-50 words)",
+        "uz": "Agar bir qishloqda non asosiy oziq-ovqat bo‘lsa va g‘alla yetishtirish kamayib ketsa, non narxiga nima bo‘ladi?  (30-50 so‘z)",
+        "ru": "Если в деревне хлеб — основной продукт, и производство зерна снижается, что произойдёт с ценой на хлеб? (30–50 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "Tell us about a recent economic issue in Uzbekistan or the world that you find interesting. What are your thoughts on it?",
-        "uz": "O‘zbekiston yoki dunyodagi yaqinda sizni qiziqtirgan bir iqtisodiy muammoni ayting. Bu haqida fikringiz qanday?",
-        "ru": "Расскажите о недавней экономической проблеме в Узбекистане или мире, которая вам интересна. Что вы о ней думаете?"
+        "en": "Tell us about a recent economic issue in Uzbekistan or the world that you find interesting. What are your thoughts on it? (80-100 words)",
+        "uz": "O‘zbekiston yoki dunyodagi yaqinda sizni qiziqtirgan bir iqtisodiy muammoni ayting. Bu haqida fikringiz qanday? (80-100 so‘z)",
+        "ru": "Расскажите о недавней экономической проблеме в Узбекистане или мире, которая вам интересна. Что вы о ней думаете? (80–100 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "How do you think the economy affects your daily life? Give a real-life example.",
-        "uz": "Iqtisodiyot sizning kundalik hayotingiz bilan qanday bog‘langan? Hayotiy misol keltiring.",
-        "ru": "Как, по вашему мнению, экономика влияет на вашу повседневную жизнь? Приведите реальный пример."
+        "en": "How do you think the economy affects your daily life? Give a real-life example. (50-80 words)",
+        "uz": "Iqtisodiyot sizning kundalik hayotingiz bilan qanday bog‘langan? Hayotiy misol keltiring. (50-80 so‘z)",
+        "ru": "Как, по вашему мнению, экономика влияет на вашу повседневную жизнь? Приведите реальный пример. (50–80 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "If you were given 100,000 UZS to start a small business, what would you do with it?",
-        "uz": "Agar sizga 100,000 so‘m berilsa va bu pulga kichik biznes boshlash topshirilsa, nima qilgan bo‘lardingiz?",
-        "ru": "Если бы вам дали 100 000 сумов на запуск небольшого бизнеса, что бы вы сделали?"
+        "en": "If you were given 100,000 UZS to start a small business, what would you do with it? (30-50 words)",
+        "uz": "Agar sizga 100,000 so‘m berilsa va bu pulga kichik biznes boshlash topshirilsa, nima qilgan bo‘lardingiz? (30-50 so‘z)",
+        "ru": "Если бы вам дали 100 000 сумов на запуск небольшого бизнеса, что бы вы сделали? (30–50 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     }
   ],
   "field_engineering": [
     {
       "q": {
-        "en": "If you were in a village without electricity, what system or device would you try to create to help the community?",
-        "uz": "Agar siz elektr energiyasi bo‘lmagan bir qishloqda bo‘lsangiz, jamoaga yordam berish uchun qanday tizim yoki qurilma yasashga harakat qilgan bo‘lardingiz?",
-        "ru": "Если бы вы оказались в деревне без электричества, какую систему или устройство вы попытались бы создать, чтобы помочь сообществу?"
+        "en": "If you were in a village without electricity, what system or device would you try to create to help the community? (50-80 words)",
+        "uz": "Agar siz elektr energiyasi bo‘lmagan bir qishloqda bo‘lsangiz, jamoaga yordam berish uchun qanday tizim yoki qurilma yasashga harakat qilgan bo‘lardingiz? (50-80 so‘z)",
+        "ru": "Если бы вы оказались в деревне без электричества, какую систему или устройство вы попытались бы создать, чтобы помочь сообществу? (50–80 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "How would you solve any current problem at your school or home using engineering?",
-        "uz": "Maktabingizda yoki uyingizda muammo bo‘lib turgan biror narsani muhandislik orqali qanday hal qilgan bo‘lardingiz?",
-        "ru": "Как бы вы решили любую текущую проблему в школе или дома с помощью инженерного подхода?"
+        "en": "How would you solve any current problem at your school or home using engineering? (50-80 words)",
+        "uz": "Maktabingizda yoki uyingizda muammo bo‘lib turgan biror narsani muhandislik orqali qanday hal qilgan bo‘lardingiz? (50-80 so‘z)",
+        "ru": "Как бы вы решили любую текущую проблему в школе или дома с помощью инженерного подхода? (50–80 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "Imagine you are in a situation where there is no electricity, and your phone is running out of battery. What would you do?",
-        "uz": "Elektr yo‘q, telefon quvvatdan tushmoqda. Nima qilar edingiz?",
-        "ru": "Представьте, что нет электричества, а телефон разряжается. Что вы предпримете?"
+        "en": "Imagine you are in a situation where there is no electricity, and your phone is running out of battery. What would you do? (50-80 words)",
+        "uz": "Elektr yo‘q, telefon quvvatdan tushmoqda. Nima qilar edingiz? (50-80 so‘z)",
+        "ru": "Представьте, что нет электричества, а телефон разряжается. Что вы предпримете? (50–80 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "Tell us about a project (YouTube videos, science exhibitions, experiments) that you are interested in building or creating.",
-        "uz": "Sizni qurish yoki yasashga qiziqtirgan bir loyiha (YouTube videolari, ilmiy ko‘rgazmalar, tajribalar) haqida gapirib bering.",
-        "ru": "Расскажите о проекте (видео на YouTube, научные выставки, эксперименты), который вы хотите построить или создать."
+        "en": "Tell us about a project (YouTube videos, science exhibitions, experiments) that you are interested in building or creating. (30-50 words)",
+        "uz": "Sizni qurish yoki yasashga qiziqtirgan bir loyiha (YouTube videolari, ilmiy ko‘rgazmalar, tajribalar) haqida gapirib bering. (30-50 so‘z)",
+        "ru": "Расскажите о проекте (видео на YouTube, научные выставки, эксперименты), который вы хотите построить или создать. (30–50 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     }
   ],
   "field_ml": [
     {
       "q": {
-        "en": "What is the difference between a traditional machine and a 'learning' machine?",
-        "uz": "Oddiy mashina bilan “o‘rganadigan” mashina o‘rtasidagi farq nimada?",
-        "ru": "В чём разница между обычной машиной и «обучающейся» машиной?"
+        "en": "What is the difference between a traditional machine and a 'learning' machine? (30-50 words)",
+        "uz": "Oddiy mashina bilan “o‘rganadigan” mashina o‘rtasidagi farq nimada? (30-50 so‘z)",
+        "ru": "В чём разница между обычной машиной и «обучающейся» машиной? (30–50 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "If you were to teach a computer to recognize your friend's face, what steps would you take?",
-        "uz": "Agar siz kompyuterga do‘stingizning yuzini tanishni o‘rgatmoqchi bo‘lsangiz, qanday qadamlar qo‘ygan bo‘lardingiz?",
-        "ru": "Если бы вы обучали компьютер распознавать лицо вашего друга, какие шаги вы предприняли бы?"
+        "en": "If you were to teach a computer to recognize your friend's face, what steps would you take? (30-50 words)",
+        "uz": "Agar siz kompyuterga do‘stingizning yuzini tanishni o‘rgatmoqchi bo‘lsangiz, qanday qadamlar qo‘ygan bo‘lardingiz? (30-50 so‘z)",
+        "ru": "Если бы вы обучали компьютер распознавать лицо вашего друга, какие шаги вы предприняли бы? (30–50 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "Even if you have no programming experience, what would you do in the next month to understand artificial intelligence?",
-        "uz": "Sizda dasturlash tajribasi bo‘lmasa ham, keyingi bir oyda sun’iy intellektni tushunish uchun nima qilgan bo‘lardingiz?",
-        "ru": "Даже если у вас нет опыта программирования, что бы вы сделали в следующем месяце, чтобы понять искусственный интеллект?"
+        "en": "Even if you have no programming experience, what would you do in the next month to understand artificial intelligence? (50-80 words)",
+        "uz": "Sizda dasturlash tajribasi bo‘lmasa ham, keyingi bir oyda sun’iy intellektni tushunish uchun nima qilgan bo‘lardingiz? (50-80 so‘z)",
+        "ru": "Даже если у вас нет опыта программирования, что бы вы сделали в следующем месяце, чтобы понять искусственный интеллект? (50–80 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     },
     {
       "q": {
-        "en": "Do you think machines can become smarter than humans in the future? Why or why not?",
-        "uz": "Sizningcha, kelajakda mashinalar odamdan aqlli bo‘lishi mumkinmi? Nega yoki nega yo‘q?",
-        "ru": "Считаете ли вы, что в будущем машины могут стать умнее людей? Почему или почему нет?"
+        "en": "Do you think machines can become smarter than humans in the future? Why or why not? (50-80 words)",
+        "uz": "Sizningcha, kelajakda mashinalar odamdan aqlli bo‘lishi mumkinmi? Nega yoki nega yo‘q? (50-80 so‘z)",
+        "ru": "Считаете ли вы, что в будущем машины могут стать умнее людей? Почему или почему нет? (50–80 слов)"
       },
-      "max_words": 200
+      "max_words": 100
     }
   ]
 }
